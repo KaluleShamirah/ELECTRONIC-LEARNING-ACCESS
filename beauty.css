@@ -1,0 +1,347 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.home-banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+
+.content h1{
+    font-size: 70px;
+    margin-top: 40px;
+}
+
+.content h2{
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+.content p{
+    margin: 10px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+span{
+    background: #009688;
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+} 
+
+button:hover span{
+    width:100%;
+}
+
+button:hover{
+    border: none;
+}
+.homebtn {
+    color:#ffff;
+}
+.content a{
+    color:#ffff;
+}
+
+footer {
+    background-color: #009688;
+    padding: 20px;
+    text-align: center;
+}
+
+.copyright {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.about-banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(2.jpg);
+    background-size: cover;
+    background-position: center; 
+}
+.navbar{
+    width: 100%;
+    margin-right: 20px;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.about-us-section {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+}
+
+.about-us-section p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.about-us-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-us-section ul li {
+    margin-bottom: 10px;
+}
+
+.questions-section {
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 10px;
+    color: white;
+    z-index: 2;
+}
+
+.questions-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size :30px;
+    color:aqua;
+    
+}
+.questions-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+.questions-section ul li {
+    margin-bottom: 15px;
+ line-height: 1.8rem;
+}
+
+
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: #000; /* Fallback color */
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+        url(2.jpg) no-repeat center center / cover;
+    position: relative;
+    z-index: 1;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    z-index: 2;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+/* Appendix Section */
+.appendix-banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)),url(4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.appendix-section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 800px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: left;
+    z-index: 2; 
+    color: white;
+}
+
+.appendix-section a {
+    color: #00bfff;
+    text-decoration: none;
+}
+
+.appendix-section a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+}
+.course-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.course-content h1{
+    margin-bottom: 20px;
+    width: 100%;
+   color: aqua;
+}
+.course-content p{
+    margin-bottom: 20px;
+  font-size: 25px;
+    
+}
+.course-content ul{
+    list-style-type: square;
+}
+
+
+.course_list{
+    z-index: 2;
+    
+}
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+
+}
